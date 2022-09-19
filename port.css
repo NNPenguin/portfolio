@@ -32,7 +32,6 @@ header img{
 nav>ul{
     display: flex;
 }
-
 header>div>nav>ul{
     text-align: left;
 }
@@ -43,8 +42,6 @@ header>div>nav>ul{
 }
 
 /*body*/
-
-
 /*全体*/
 section{
     margin-top: 70px;
@@ -63,11 +60,13 @@ hr{
     background-color: rgba(136, 238, 253, 0.5);
     border: none;
 }
+
 /*ABOUT*/
 #githubCat{
     margin-right: 10px;
     margin-bottom: -10px;
 }
+
 /*WORK*/
 h1,p,.titleImg{
     text-align: center;
@@ -94,6 +93,14 @@ h1{
 .works{
     margin-top: 60px;
 }
+.codelink{
+    text-align: center;
+}
+.codelink a{
+    font-size: 20px;
+    margin: 5px;
+}
+
 /*SKILL*/
 .graf{
     width: 80%;
@@ -113,19 +120,11 @@ h1{
     margin: 25px 10px 0 0;
 }
 
-
-
-
-
-
-
 /*footer*/
 footer{
     background-color: rgba(136, 238, 253, 0.5);
 }
 
-  
- 
 /* ポップアップ */
 .popup {
     position: fixed;
@@ -170,4 +169,3 @@ footer{
     z-index: 1;
     cursor: pointer;
 }
-
