@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <title>ポートフォリオ</title>
+        <link rel="stylesheet" href="port.css">
+    </head>
+
+    <header>
+        <div>
+            <img src="images/portfolio.png" alt="">
+        </div>
+        <div>
+            <nav>
+                <ul>
+                    <li class="menulist"><a href="#about"><img src="images/about.png" alt=""></a></li>
+                    <li class="menulist"><a href="#work"><img src="images/work.png" alt=""></a></li>
+                    <li class="menulist"><a href="#skill"><img src="images/skill.png" alt=""></a></li>
+                </ul>
+            </nav>
+        </div>
+
+    </header>
+
+    <body>
+        <!--トップページ　ペンギンの写真-->
+        <img src="images/penguin.jpeg" alt="">
+
+        <!--ABOUT-->
+        <section id="about">
+            <div class="titleImg">
+            <img class="title" src="images/about.png" alt="">
+            </div>
+            <hr>
+            <p>はじめまして。<br>
+            ポートフォリオをご覧くださりありがとうございます。<br>
+            今年の５月から職業訓練でプログラミングを学び始めました。<br>
+            実務未経験ではありますが、知識や技術をどんどん身に付けてエンジニアとして活躍していけるよう頑張ります。<br>
+            </p>
+            <p><img id="githubCat" src="images/githubcat.png" alt=""><a href="https://github.com/NNPenguin" target="_blank">https://github.com/NNPenguin</a></p>
+
+        </section>
+
+        <!--WORK-->
+        <section id="work">
+            <div class="titleImg">
+            <img class="title" src="images/work.png" alt="">
+            </div>
+            <hr>
+            <div class="workspace">
+
+                <!--作品１　ポートフォリオサイト-->
+                <div id="works1" class="works">
+                    <h1>ポートフォリオサイト</h1>
+                    <img id="workImg1" class="workImg" src="images/work1.png" alt="">
+                </div>
+                <!--画像クリック時に表示　１-->
+                <div id="popup1" class="popup">
+                    <div id="popupinner1" class="popupinner">
+                        <div id="img1" class="img"><img src="images/explanation1.png" alt=""></div>
+                    </div>
+                    <div id="background1" class="background"></div>
+                </div>
+
+                <!--作品２　万年カレンダー-->
+                <div id="works2" class="works">
+                    <h1>万年カレンダー</h1>
+                    <img id="workImg2" class="workImg" src="images/work2.png" alt="">
+                    <div class="codelink">
+                        <a href="https://nnpenguin.github.io/calendar/">Webサイト</a>
+                        <a href="https://github.com/NNPenguin/calendar">コード(GitHub)</a>
+                    </div>
+                </div>
+                <!--画像クリック時に表示　２-->
+                <div id="popup2" class="popup">
+                    <div id="popupinner2" class="popupinner">
+                        <div id="img2" class="img"><img src="images/explanation2.png" alt=""></div>
+                    </div>
+                    <div id="background2" class="background"></div>
+                </div>
+
+                <!--作品３　会員登録・ログイン機能-->
+                <div id="works3" class="works">
+                    <h1>会員登録・ログイン機能</h1>
+                    <img  id="workImg3" class="workImg" src="images/work3.png" alt="">
+                    <div class="codelink">
+                        <a href="https://github.com/NNPenguin/registration">コード(GitHub)</a>
+                    </div>
+                </div>
+                <!--画像クリック時に表示　３-->
+                <div id="popup3" class="popup">
+                    <div id="popupinner3" class="popupinner">
+                        <div id="img3" class="img"><img src="images/explanation3.png" alt=""></div>
+                    </div>
+                    <div id="background3" class="background"></div>
+                </div>
+
+                <!--作品４　風船ゲーム-->
+                <div id="works4" class="works">
+                    <h1>風船ゲーム</h1>
+                    <img  id="workImg4" class="workImg" src="images/work4-2.png" alt="">
+                </div>
+                <!--画像クリック時に表示　４-->
+                <div id="popup4" class="popup">
+                    <div id="popupinner4" class="popupinner">
+                        <div id="img4" class="img"><img src="images/explanation4-2.png" alt=""></div>
+                    </div>
+                    <div id="background4" class="background"></div>
+                </div>
+            </div>
+        </section>
+
+        <!--SKILL-->
+        <section id="skill">
+            <div class="titleImg">
+            <img class="title" src="images/skill.png" alt="">
+            </div>
+            <hr>
+            <p>技術力を10段階で自己評価しました。</p>
+            <ul class="graf">
+                <li style="background:rgba(136, 238, 253, 0.8);width:80%;">HTML5<span>8</span></li>
+                <li style="background:rgba(138, 136, 253, 0.8);width:60%;">CSS3<span>6</span></li>
+                <li style="background:rgba(136, 238, 253, 0.8);width:50%;">JavaScript<span>5</span></li>
+                <li style="background:rgba(138, 136, 253, 0.8);width:40%;">PHP<span>4</span></li>
+                <li style="background:rgba(136, 238, 253, 0.8);width:40%;">MySQL<span>4</span></li>
+                <li style="background:rgba(138, 136, 253, 0.8);width:50%;">Illustrator<span>5</span></li>
+                <li style="background:rgba(136, 238, 253, 0.8);width:30%;">Photoshop<span>3</span></li>
+            </ul>
+        </section>
+
+        <!--WORK ポップアップ設定-->
+        <script>
+            let popup1 = document.getElementById('popup1');
+            let background1 = document.getElementById('background1');
+            let workImg1 = document.getElementById('workImg1');
+            function popupSetting1(){
+                function popUp(element){
+                    element.addEventListener('click', function(){
+                        popup1.classList.toggle('show');
+                    });
+                }
+                popUp(workImg1);
+                popUp(background1);
+            }
+            popupSetting1();
+
+            let popup2 = document.getElementById('popup2');
+            let background2 = document.getElementById('background2');
+            let workImg2 = document.getElementById('workImg2');
+            function popupSetting2(){
+                function popUp(element){
+                    element.addEventListener('click', function(){
+                        popup2.classList.toggle('show');
+                    });
+                }
+                popUp(workImg2);
+                popUp(background2);
+            }
+            popupSetting2();
+
+            let popup3 = document.getElementById('popup3');
+            let background3 = document.getElementById('background3');
+            let workImg3 = document.getElementById('workImg3');
+            function popupSetting3(){
+                function popUp(element){
+                    element.addEventListener('click', function(){
+                        popup3.classList.toggle('show');
+                    });
+                }
+                popUp(workImg3);
+                popUp(background3);
+            }
+            popupSetting3();
+
+            let popup4 = document.getElementById('popup4');
+            let background4 = document.getElementById('background4');
+            let workImg4 = document.getElementById('workImg4');
+            function popupSetting4(){
+                function popUp(element){
+                    element.addEventListener('click', function(){
+                        popup4.classList.toggle('show');
+                    });
+                }
+                popUp(workImg4);
+                popUp(background4);
+            }
+            popupSetting4();
+
+        </script>
+    </body>
+    
+    <footer>
+        <nav>
+            <ul>
+                <li><a href="#skill">SKILL</a></a></li>
+                <li><a href="#about">ABOUT</a></li>
+                <li><a href="#work">WORK</a></a></li>
+            </ul>
+            <p><small>Copyright&copy;NNPenguin All Rights Reserved.</small></p>
+        </nav>
+    </footer>
+</html>

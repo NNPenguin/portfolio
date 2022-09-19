@@ -1,0 +1,173 @@
+@charset "UTF-8";
+*{
+    margin: 0 auto;
+    padding: 0;
+}
+p{
+    margin: 20px 0; 
+    font-size: 20px;
+}
+li{
+    list-style: none;
+}
+a:hover{
+    opacity: 0.4;
+}
+body>img{
+    width: 100%;
+}
+
+/*header*/
+header{
+    position: absolute;
+    background-color: rgba(136, 238, 253, 0.5);
+    width: 100%;
+}
+header{
+    display: flex;
+}
+header img{
+    width: 100%;
+}
+nav>ul{
+    display: flex;
+}
+
+header>div>nav>ul{
+    text-align: left;
+}
+.menulist{
+    width: 25%;
+    margin-top: 6%;
+    margin-bottom: 1%;
+}
+
+/*body*/
+
+
+/*全体*/
+section{
+    margin-top: 70px;
+}
+.title{
+    width: 20%;
+    display: inline;
+    text-align: center;
+}
+.titleImg{
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+hr{
+    height: 8px;
+    background-color: rgba(136, 238, 253, 0.5);
+    border: none;
+}
+/*ABOUT*/
+#githubCat{
+    margin-right: 10px;
+    margin-bottom: -10px;
+}
+/*WORK*/
+h1,p,.titleImg{
+    text-align: center;
+}
+h1{
+    font-size: 25px;
+    margin-bottom: 15px;
+}
+.workImg{
+    width: 500px;
+    border: solid 3px;
+    border-color:  rgba(136, 238, 253, 0.5);
+}
+.workImg:hover{
+    opacity: 0.4;
+}
+.workspace{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    align-content: space-between;
+}
+.works{
+    margin-top: 60px;
+}
+/*SKILL*/
+.graf{
+    width: 80%;
+}
+.graf li {
+    display: block;
+    height: 55px;
+    margin:30px 0;
+    color: rgb(30, 37, 108);
+    font-size: 20px;
+    font-weight: bold;
+    padding: 3px 0px 3px 5px;
+}
+.graf li span{
+    float: right;
+    font-size: 18px;
+    margin: 25px 10px 0 0;
+}
+
+
+
+
+
+
+
+/*footer*/
+footer{
+    background-color: rgba(136, 238, 253, 0.5);
+}
+
+  
+ 
+/* ポップアップ */
+.popup {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.5s;
+}
+
+.popup.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+.popupinner {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    width: 80%;
+    max-width: 800px;
+    padding: 50px;
+    background-color: rgb(255, 255, 255);
+    z-index: 2;
+}
+
+.popupinner img {
+    width: 100%;
+}
+
+.background {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 1;
+    cursor: pointer;
+}
+
